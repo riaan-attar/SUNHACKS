@@ -24,8 +24,9 @@ from ats import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="index"),
-    path('signup/', views.signup, name="signup"),
+   # path('signup/', views.signup, name="signup"),
     path('social-auth/', include('social_django.urls', namespace='social')),
     path('submit_application/', views.submit_application, name="submit_application"),
+    path('hr_homepage/',views.hr_view, name ="hr_view")
                ]
 
