@@ -1,10 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import os
 import tempfile
 import docx2txt
 import fitz  # PyMuPDF
 from .models import Applicant
+import google.generativeai as genai
+import re
 
 
 def home(request):
@@ -24,7 +26,7 @@ def submit_application(request):
 
     # Validate inputs
     if not (name and email and resume_file and phone):
-        return HttpResponse('Incomplete data provided', status=400)
+        return redirect(request,ocr)
 
     # Check if the uploaded file is an image
     if resume_file.content_type.startswith('image'):
@@ -52,3 +54,8 @@ def submit_application(request):
     new_applicant.save()
 
     return HttpResponse('Application submitted successfully', status=200)
+
+def ocr(request):
+    
+
+    return
