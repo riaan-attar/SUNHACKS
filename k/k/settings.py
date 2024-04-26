@@ -128,7 +128,7 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.google.GoogleOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 ]
-LOGIN_URL = ''
+LOGIN_URL = 'login.html'
 LOGIN_REDIRECT_URL = ''
 LOGOUT_REDIRECT_URL = ''
 LOGOUT_URL = ''

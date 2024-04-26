@@ -138,3 +138,4 @@ def add_keywords_to_applicant(applicant, keywords_list):
 
 def hr_view(request):
     return render(request, "example_template.html")
+
