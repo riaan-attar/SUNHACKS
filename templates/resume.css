@@ -1,0 +1,101 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2aacea;
+}
+
+/* Form styles */
+.form-container {
+    height: 500px;
+    width: 520px;
+    border-radius: 0.75rem;
+    background-color:white;
+    padding: 2rem;
+    color: #006edc;
+    margin-left: 700px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: #006edc;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 40%;
+    border-radius: 0.375rem;
+    border: 1px solid #006edc;
+    outline: 0;
+    background-color: #white;
+    padding: 0.75rem 1rem;
+    color:black;
+}
+
+.input-group input:focus {
+    border-color: rgba(167, 139, 250);
+}
+
+.sign {
+    display: block;
+    width: 100%;
+    background-color: rgba(167, 139, 250, 1);
+    padding: 0.75rem;
+    text-align: center;
+    color: #006edc;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #006edc;
+    margin-top: 1.5rem;
+}
+
+.signup a,
+.forgot a {
+    color: #006edc;
+    text-decoration: none;
+}
+
+.signup a:hover,
+.forgot a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);
+}
+
+.input-group input[type="file"]  {
+    content: "Choose File";
+    display: inline-block;
+    color:black; /* Change color to your preferred color */
+}
