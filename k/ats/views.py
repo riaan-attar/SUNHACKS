@@ -8,10 +8,10 @@ from .models import Applicant
 
 
 def home(request):
-    return render("index.html")
+    return render(request,"index.html")
 
 def signup(request):
-    return render ("login.html")
+    return render (request,"login.html")
 
 def submit_application(request):
     if request.method != 'POST':
