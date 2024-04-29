@@ -1,0 +1,128 @@
+.bone {
+    display: flex; /* Use flexbox layout */
+    /* justify-content: center; Center the flex items horizontally */
+    align-items: flex-start; /* Center the flex items vertically */
+
+    border-color: black;
+}
+.body{
+    background-color: #2aecea;
+}
+.leftcontain, .midcontain, .rightcontain {
+    margin: 0; /* Add some margin between the divs */
+}
+.leftcontain{
+    border: 2px solid black;
+    height: 650px;
+    width: 300px;
+    margin-left: 60px;
+    border-color: black;
+}
+
+.l1 , .l2 , .r1 , .r2, .text-center {
+    width:100px;
+    border-width: 2px
+}
+hr {
+    border: none; /* Remove default border */
+    height: 2px; /* Set height of the line */
+    background-color: #000; /* Set color of the line */
+    margin: 100px 0; /* Add some margin for spacing */
+}
+.mid{
+    height:500px;
+    width: 100px;
+}
+button {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 20px;
+    /* margin-left: 0px; */
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  button .arrow-wrapper {
+    display: relative;
+    justify-content: center;
+    
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+  right:0;
+  }
+
+  .midcontain{
+    height: 650px;
+    width: 500px;
+    margin-left: 40px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+  }
+  .wrapper{
+    background-color: white;
+    padding-left: 10px;
+    padding-top : 30px
+  }
+  .rightcontain{
+    background-color: white;
+  }
+  .midcontain{
+    background-color: white;
+  }
+  .title{
+    display: inline;
+  }
+  .rightcontain{
+        height: 650px;
+        width: 500px;
+        margin-left: 40px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid black;
+
+  }

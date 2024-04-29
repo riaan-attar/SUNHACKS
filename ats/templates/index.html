@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIREMe.io</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="app">
+
+        <!-- Start: Header section -->
+        <div class="header">
+            
+            <!-- Start: Logo  -->
+            <div class="left flexC">
+                <div class="logo font-mono">
+                    <div class="company">HIREMe.AI</div>
+                    <div class="motto">— Online Resume Shortlister </div>
+                </div>
+
+                <div class="burger flexC">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h20a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h20a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h20a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                    </svg>
+                </div>
+            </div>
+            <!-- End: logo  -->
+
+            <!-- Start: menu  -->
+            <div class="menu" style="--theme-color: black; margin-top: 10px;">
+                <ul>
+                    <li style="padding-top: 10px"><a href="">Store</a></li>
+                    <li style="padding-top: 10px"><a href="padding-top: 10px"> Blog</a></li>
+                    <li style="padding-top: 10px"><a href=""> Community</a></li>
+                    <li style="padding-top: 10px;"><a href="">About us</a></li>
+                    <li>
+                        <a href="{% url 'signup'%}">
+                            <button onclick="window.location.href='login.html'">
+                                Sign up
+                                <div class="arrow-wrapper">
+                                    <div class="arrow"></div>
+                                </div>
+                            </button>
+                        </a>
+                    </li>
+                    
+            </ul>
+            </div>
+            <!-- End: menu  -->
+
+        </div>
+        <!-- End: Header section -->
+
+        <!-- Start: Hero section  -->
+        <div class="hero">
+            <div class="left">
+                <h1>🚀 GET YOUR RESUME SHORTLISTED USING AI </h1>
+                <p style="font-size: 28px; ">HIREMe.AI helps you shortlist resumes for jobs, highlighting the key experience and skills he need to see..</p>
+                <p>
+                    🎯 Shares about products & Ideas <br/>
+                    💬 Ask me about Frontend & Backend Technologies <br/>
+                    😘 Big fan of 🎶 and 🍲
+                </p>
+                <div class="cta flexC">
+                    <img src="{% static 'assets/hero_arrow.svg' %}" class="arrow-img">
+                    <a href="{%url 'resume' %}"> <button class="cta-btn font-mono"> Upload My Resume</button></a>
+                </div>
+            </div>
+            <div class="right flexC">
+                <img src="{% static 'assets/hero_ilus.svg' %}" alt="hero illustration">
+            </div>
+        </div>
+        <!-- Ends: hero sections  -->
+
+        <!-- starts: featured media section  -->
+        <div class="featured-media-container flexC">
+            <div class="featured-media flexC">
+                <img src="{% static 'assets/hero_image.png' %}">
+            </div>
+        </div>
+        <!-- ends: featured media section  -->
+
+        <!-- starts: features section  -->
+        <div class="features">
+            <h1> Uses GEN AI to ananlyse</h1>
+            <div class="feature-sub-head">Algorithms and keyword analysis to assess resumes against specific criteria set by the employe
+                We have used various models of google genrative ai integrated ti ananlyse resumes acurately and quickly, like gemini-vision-pro,Gemini 1.5
+            </div>
+            
+            
+        <!-- ends: features section  -->
+
+        
+
+        <!-- starts: working section  -->
+        <div class="working">
+            <h2>😲 How it works?</h2>
+            <div class="working-grid">
+                <div class="left flexC">
+                <img src="{% static 'assets/how_it_works.svg' %}">
+                </div>
+                <div class="right">
+                    <div class="item mT0">
+                        <div class="tick flexC">
+                            <img src="{% static 'assets/tick.svg' %}" alt="" srcset="">
+                        </div>
+                        <h3>GOOGLE USER AUTHENTICATION
+                        </h3>
+                    </div>
+                    <div class="item">
+                        <div class="tick flexC">
+                            <img src="{% static 'assets/tick.svg' %}" alt="" srcset="">
+                        </div>
+                        <h3>RESUME UPLOAD THAT SDUPPORT ALL FILE FORMATS
+                       </h3>
+                    </div>
+                    <div class="item">
+                        <div class="tick flexC">
+                            <img src="{% static 'assets/tick.svg' %}" alt="" srcset="">
+                        </div>
+                        <h3>AI RECOMMENDATIONS FOR JOB APPLICANTS</h3>
+                    </div>
+                    <div class="item">
+                        <div class="tick flexC">
+                            <img src="{% static 'assets/tick.svg' %}" alt="" srcset="">
+                        </div>
+                        <h3>GEN AI BASED SUGGESTIONS SYSTEM FOR HR’s </h3>
+                    </div>
+                    <div class="item">
+                        <div class="tick flexC">
+                            <img src="{% static 'assets/tick.svg' %}" alt="" srcset="">
+                        </div>
+                        <h3>KEYWORD MATCHING USING GOOGLE GEMINI AI API
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ends: working section  -->
+        <!-- starts: testimonials  -->
+        <div class="testimonials">
+            <h2>👏 what our customers say about us!</h2>
+
+            <div class="testimonial-grid">
+                <div class="item">
+                    <img src="{% static 'assets/quote.svg' %}" class="quote">
+                    <div class="content">
+                        The most concise and frequent YouTube channel for Firebase and general Web development videos. Subscribe if you haven't, you won't be disappointed 🔥
+                        <div class="cux">— Cyindrella, India</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="{% static 'assets/quote.svg' %}" class="quote">
+                    <div class="content">
+                        The most concise and frequent YouTube channel for Firebase and general Web development videos. Subscribe if you haven't, you won't be disappointed 🔥
+                        <div class="cux">— Cyindrella, India</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="{% static 'assets/quote.svg' %}" class="quote">
+                    <div class="content">
+                        The most concise and frequent YouTube channel for Firebase and general Web development videos. Subscribe if you haven't, you won't be disappointed 🔥
+                        <div class="cux">— Cyindrella, India</div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="{% static 'assets/quote.svg' %}" class="quote">
+                    <div class="content">
+                        The most concise and frequent YouTube channel for Firebase and general Web development videos. Subscribe if you haven't, you won't be disappointed 🔥
+                        <div class="cux">— Cyindrella, India</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ends: testimonials  -->
+
+
+        <!-- starts: footer  -->
+        <footer class="footer">
+            
+            
+            <div >Made by <a href="https://company.io">HIREMe.AI</a></div>
+            
+        </footer>
+        <!-- ends: footer  -->
+    </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    var headerMenu = document.querySelector('.header .menu');
+    var burgerMenu = document.querySelector('.header .burger');
+
+    burgerMenu.addEventListener('click', function(e) {
+        var classList = headerMenu.classList;
+        if(classList.value.indexOf('show') == -1) classList.add('show');
+        else classList.remove('show');
+    });    
+});
+</script>
+</body>
+</html>
