@@ -131,10 +131,10 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 LOGIN_URL = 'login.html'
-LOGIN_REDIRECT_URL = 'hrn/'
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/hrn/'
 LOGOUT_REDIRECT_URL = 'hrn/'
 LOGOUT_URL = 'hrn/'
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '248015940088-m1k83r38f37pe0r3c00l2ajue426tttl.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '98922607829-ths9imheuvm6qhq42jgvu2bk11b78ui4.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
 
