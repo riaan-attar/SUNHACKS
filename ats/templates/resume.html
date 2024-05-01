@@ -15,11 +15,11 @@
     </div>
     <div class="form-container">
         <p class="title">UPLOAD YOUR RESUME </p>
-        <form class="form" method="POST" enctype="multipart/form-data">{% csrf_token %}
+        <form class="form" method="POST" enctype="multipart/form-data" action="{% url 'thank' %}" enctype="multipart/form-data" >{% csrf_token %}
             
             <div class="input-group">
                 <label for="username">Full Name:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your full name">
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
             </div>
             <div class="input-group">
                 <label for="email">Email:</label>
@@ -27,13 +27,13 @@
             </div>
             <div class="input-group">
                 <label for="number">Phone No.:</label>
-                <input type="tel" id="number" name="number" placeholder="Enter your phone number">
+                <input type="tel" id="number" name="phone" placeholder="Enter your phone number">
             </div>
             <div class="input-group">
                 <label for="file">Resume </label>
                 <input type="file" id="file" name="resume" placeholder="pdf,doc,docx">
             </div>
-            <a href="{}"><button type="submit" class="sign">SUBMIT</button></a>
+            <a href="{% url 'thank' %}"><button type="submit" class="sign">SUBMIT</button></a>
         </form>
     </div>
 </body>
