@@ -12,8 +12,6 @@ import google.generativeai as genai
 import fitz
 import pathlib
 import json
-# import magic
-# from .utils import pdfkey, imgkey
 import PyPDF2
 
 def home(request):
@@ -66,7 +64,6 @@ def imgkey(img_path):
     text = response._result.candidates[0].content.parts[0].text
     return text
 
-
 def thank(request):
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -90,5 +87,4 @@ def thank(request):
         #     keyword_object, _ = Keyword.objects.get_or_create(name=keywords)
         #     applicant.keywords.add(keyword_object)
     return render(request, 'thank.html')
-   
-    
+
