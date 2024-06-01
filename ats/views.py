@@ -83,8 +83,5 @@ def thank(request):
             keywords = None
         os.unlink(temp_file_path)
         applicant = Applicant.objects.create(name=name, phone=phone, email=email, keywords=keywords)
-        # if keyword:
-        #     keyword_object, _ = Keyword.objects.get_or_create(name=keywords)
-        #     applicant.keywords.add(keyword_object)
     return render(request, 'thank.html')
 
